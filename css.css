@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+   
+}
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: #242424;
+    font-family: 'Inter', sans-serif;
+    text-decoration:none;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+ }
+
+ .navbar.sticky{ 
+    background: #242424;
+    padding: 30px 0;
+
+ }
+ .navbar .sticky .logo a span{
+color: #fff;    
+}
+
+.navbar .logo a{
+   color: rgb(253, 253, 253);
+   font-size: 35px;
+   font-weight: 500;
+   text-decoration: none;
+}
+
+.navbar .logo a span{
+  color: green;
+  }
+
+.navbar .sticky .logo a span{ 
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+.navbar .menu li a {
+     float: left;
+     color: #fff;
+     font-size: 15px;
+     font-weight: 500;
+     text-decoration: none;
+     transition: color 0.3s ease;
+     display: flex;
+}
+.navbar .menu li a:hover{
+ color: rgb(4, 92, 38);
+
+}
+
+
+.navbar .max-widht{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-widht{
+    max-width: 1300px;
+    padding: 0.80px;
+    margin: auto;
+}
+
+
+
+
+
+.home{
+    display: flex;
+    background: url(imagens/banner.png) center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Inter', sans-serif;
+}
+
+.home .max-widht{
+      margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .texto-2{
+    font-size: 75px;
+    margin-left:-3px;
+    font-weight: -3px;
+}
+.home .home-content .texto-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .texto-3 span{
+    color: green;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: green;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid green;
+
+}
+.home .home-content a:hover{
+    color: green;
+    background:none;
+
+}
+
+
+@media(max-widht:947px){
+  .max-widht{
+    padding: 0 0px;
+  }
+
+}
+
+.about {
+    font-family: 'Roboto' sans-serif;
+}
+
+.about .title {
+    font-family: 'Ubuntu' sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "Quem sou eu";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: green;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+section{
+    padding: 100px 0;
+    
+}
+
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+ }
+ .about .about-content .right{
+    width: -55%;
+ }
+
+ .about .about-content text{
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+ }
+
+ .about .about-content span{
+    color: green
+ }
+
+ .about .about-content text p{
+  text-align: justify;  
+}
+
+.cv {
+    display: inline-block;
+    text-decoration: none;
+    background: green;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid green;
+    transition: all 0.3 ease;
+ }
+ .cv:hover{
+    color: green;
+    background: none;
+ }
+
+.fatec {
+  background-color:rgb(163, 163, 163);
+  color: rgb(249, 252, 247);
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5 ease;
+  border-radius: 5px;
+  border:1px green;
+ }
+.fatec:hover{
+    color:green;
+    background:none;
+}
+
+
+
+.skills .title::after{
+    content: "Que faço"
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills{
+    font-family: 'Roboto' sans-serif;
+}
+
+.skills .title::after{
+   margin-bottom: 3em;
+   content: "O que faço";
+   color: green;
+}
+
+ .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .column- .left{
+ font-size: 25px;
+ font-weight: 500;
+ margin-bottom: 10px;
+ }
+
+h2{
+    text-align: center;
+}
+
+
+
+
+  .contatos {
+    text-align: center;
+  }
+
+
+  .box{
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.box:hover{
+    width: 200px;
+    background: #c32aa3;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px #b315917c;
+}
+.box:nth-child(2):hover{
+    background: #25d366;
+    box-shadow: 0 0 50px #25d3657e;
+}
+.box:nth-child(3):hover{
+    background: #1877f2;
+    box-shadow: 0 0 50px #1876f285;
+}
+.box:nth-child(4):hover{
+    background: #002fff;
+    box-shadow: 0 0 50px #0414ff80;
+}
+.navbar p{
+    transform: translate(60px);
+}
+.box .icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0e0e0e;
+    border-radius: 200%;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+.instagram{
+    background-color: #c32aa3;
+}
+.whatsapp{
+    background-color: #25d366;
+}
+.facebook{
+    background-color: #8305fa;
+}
+.linkedin{
+    background-color: #1da1f2;
+}
+.box:hover .icon{
+    background: #fff;
+    color: #3b3b3b;
+    box-shadow: 0 0 30px rgba(0,0,0,0.26);
+}
+
+.insta, .zap, .face, .link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.text{
+    text-align: center;
+}
+
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form label{
+    color: #080808;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form button{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    background: green;
+    border: 2px solid #0e0e0e;
+    color: #000e03;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    margin-left: 300px;
+    
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #00804b;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #00804b;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: #00804b;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00804b;
+}
+.skills .skills-content .right .html::before{
+    width: 63%;
+}
+.skills .skills-content .right .css::before{
+    width: 55%;
+}
+.skills .skills-content .right .js::before{
+    width: 47%;
+}
+.skills .skills-content .right .php::before{
+    width: 27%;
+}
+.skills .skills-content .right .mysql::before{
+    width: 42%;
+}
+
+footer{
+    margin-top: 20px;
+    background: green;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+@media (max-width: 690px){
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card {
+        width:100%;
+    }
+}
+@media (max-width: 500px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
